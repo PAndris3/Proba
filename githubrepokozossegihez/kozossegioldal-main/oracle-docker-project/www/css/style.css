@@ -1,0 +1,301 @@
+/* Általános stílusok */
+body {
+    background-color: #55a3a3;
+    margin: 0;
+    padding: 0;
+    font-family: "Bell MT", Arial, sans-serif;
+    font-size: 18px;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Konténer a fejléc számára */
+#container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #45918f;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Oldal címe/logója */
+#title {
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: "Cooper Black", sans-serif;
+    margin: 0 20px;
+}
+
+
+.button {
+    background-color: #c0fafa;
+    border-radius: 20px;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: #53edd3;
+}
+
+.link {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+.main-content {
+    display: flex;
+    width: 90%;
+    margin: 20px auto;
+    gap: 20px;
+}
+
+.left-column {
+    flex: 2;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    border: 2px solid #c0fafa;
+}
+
+.right-column {
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    border: 2px solid #c0fafa;
+}
+
+
+h1, h2, h3 {
+    color: #c0fafa;
+    margin-top: 0;
+}
+
+
+.post, .comment, .user-card {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #c0fafa;
+}
+
+.post-header, .comment-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.post-author, .comment-author {
+    font-weight: bold;
+    color: #c0fafa;
+}
+
+.post-date, .comment-date {
+    font-size: 14px;
+    color: #ddd;
+}
+
+.post-content, .comment-content {
+    margin-bottom: 15px;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+textarea, input[type="text"], input[type="email"], input[type="password"] {
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #c0fafa;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+button, input[type="submit"] {
+    background-color: #c0fafa;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: "Bell MT", Arial, sans-serif;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+button:hover, input[type="submit"]:hover {
+    background-color: #53edd3;
+}
+
+
+.friend-request, .group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #c0fafa;
+}
+
+.accept-btn, .reject-btn {
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.accept-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.reject-btn {
+    background-color: #f44336;
+    color: white;
+}
+
+
+.search-container {
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.search-input {
+    width: 70%;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #c0fafa;
+}
+
+.search-results {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.user-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-info {
+    flex-grow: 1;
+}
+
+.user-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+.message {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.success-message {
+    background-color: rgba(76, 175, 80, 0.2);
+    border: 1px solid #4CAF50;
+}
+
+.error-message {
+    background-color: rgba(244, 67, 54, 0.2);
+    border: 1px solid #f44336;
+}
+
+
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+    }
+    
+    .nav-buttons {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    #title {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    
+    #container {
+        flex-direction: column;
+    }
+}
+
+.navbar {
+  background-color: #45918f;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-brand a {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Cooper Black", sans-serif;
+  text-decoration: none;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 15px;
+  border-radius: 20px;
+  transition: background-color 0.3s;
+  font-weight: bold;
+}
+
+.navbar-links a:hover, .navbar-links a.active {
+  background-color: #c0fafa;
+  color: #333;
+}
+
+/* Reszponzív viselkedés */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 10px;
+  }
+  
+  .navbar-links {
+    margin-top: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Főoldal</title>
+    <link rel="stylesheet" href="css/uzenofal.css">
+</head>
+<body>
+<div id="container">
+    <div id="title">Linksy</div>
+    <div class="reg_button">
+        <div class="button">
+            <a class="link" href="kereses.html">Keresés</a>
+        </div>
+    </div>
+    <div class="reg_button">
+        <div class="button">
+            <a class="link" href="uzenet.html">Üzenetek</a>
+        </div>
+    </div>
+    <div class="reg_button">
+        <div class="button">
+            <a class="link" href="profil.html">Profil</a>
+        </div>
+    </div>
+</div>
+<div id="box">
+    <div id="bal">
+        <div id="iras">
+            <form method="POST">
+                <textarea id="uzeno" maxlength="1000" placeholder="Írj egy új bejegyzést!"></textarea>
+                <button id="postolas" type="submit">Küldés</button>
+            </form>
+        </div>
+        <div class="bejegyzes">
+            <p class="nev">Név</p>
+            <p>Szöveg</p>
+            <p class="datum">2025.02.13.</p>
+            <hr class="line">
+            <p>Válaszok</p>
+            <div class="komment">
+                <p class="valasz_nev">Név</p>
+                <p class="valaszok">Válasz</p>
+                <p class="valasz_datum">2025.02.13.</p>
+                <form method="POST">
+                    <textarea id="valasz" maxlength="1000" placeholder="Írj választ!"></textarea>
+                    <input id="kep" type="file">
+                    <button id="send" type="submit">Küldés</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="jobb">
+        <h2>Ismerősnek jelölések</h2>
+        <div class="ismeros">
+                <p>Valaki1</p>
+                <div class="gomb">
+                    <button class="elfogad" type="button">&#10003;</button>
+                    <button class="visszaut" type="button">&#10005;</button>
+                </div>
+        </div>
+        <h2>Ajánlások</h2>
+        <a class="ajanlas" href="profil2.html">Valaki2</a>
+        <h2>Csoport meghívások</h2>
+        <div class="ismeros">
+            <p>Csoport1</p>
+            <div class="gomb">
+                <button class="elfogad" type="button">&#10003;</button>
+                <button class="visszaut" type="button">&#10005;</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

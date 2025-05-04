@@ -1,0 +1,328 @@
+body{
+    background-color:#55a3a3;
+    margin: 20px;
+    font-family: "Bell MT";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+#container{
+    width: 100%;
+    display: flex;
+}
+#title{
+    text-align: center;
+    width: 20%;
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+    font-family: "Cooper Black";
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.button{
+    background-color: #c0fafa;
+    width: 200px;
+    height: 40px;
+    margin-bottom: 0;
+    margin-top: 35px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.link{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+}
+
+.link:visited{
+    color: black;
+}
+
+a{
+    text-decoration: none;
+    color: #c0fafa;
+}
+
+a:visited{
+    color: #c0fafa;
+}
+
+.login{
+    text-align: center;
+    margin-top: 10px;
+}
+
+#box{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 35px;
+    border: #c0fafa solid;
+    border-radius: 40px;
+    padding: 15px;
+    align-items: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+}
+
+input{
+    margin-bottom: 18px;
+    border-radius: 20px;
+    height: 20px;
+    border: none;
+}
+
+label{
+    font-weight: bold;
+}
+
+#modosit{
+    font-size: 25px;
+    font-family: "Bell MT";
+    background-color: #c0fafa;
+    border: none;
+    border-radius: 20px;
+    width: 200px;
+    height: 40px;
+    margin-top: 15px;
+}
+
+#feltolt, #hozzaadas{
+    font-size: 15px;
+    font-family: "Bell MT";
+    background-color: #c0fafa;
+    border: none;
+    border-radius: 20px;
+    width: 100px;
+    height: 30px;
+    margin-bottom: 15px;
+}
+
+.add{
+    font-size: 15px;
+    font-family: "Bell MT";
+    background-color: #c0fafa;
+    border: none;
+    border-radius: 20px;
+    width: 150px;
+    height: 30px;
+    margin-bottom: 15px;
+}
+
+.add_img{
+    grid-column: span 2;
+}
+
+
+#jelentes{
+    font-size: 25px;
+    font-family: "Bell MT";
+    background-color: #2e55c9;
+    border: none;
+    border-radius: 20px;
+    width: 300px;
+    height: 40px;
+}
+
+#feltoltes, #uj, .uj_img{
+    margin: 5px 0;
+}
+
+#jel_div{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 35px;
+    border: #c0fafa solid;
+    border-radius: 40px;
+    padding: 15px;
+    align-items: center;
+}
+
+#jeloles:hover, #jelentes:hover, #modosit:hover, #inaktiv:hover, #archiv:hover, #delete:hover, .button:hover, .alb_delete:hover, #feltolt:hover{
+    background-color: #53edd3;
+}
+
+#inaktiv{
+    font-size: 25px;
+    font-family: "Bell MT";
+    background-color: #c0fafa;
+    border: none;
+    border-radius: 20px;
+    width: 200px;
+    height: 40px;
+    margin-top: 15px;
+}
+
+#jeloles{
+    font-size: 25px;
+    font-family: "Bell MT";
+    background-color: #c0fafa;
+    border: none;
+    border-radius: 20px;
+    width: 300px;
+    height: 40px;
+    margin-top: 15px;
+}
+
+#archiv{
+    font-size: 25px;
+    font-family: "Bell MT";
+    background-color: #c0fafa;
+    border: none;
+    border-radius: 20px;
+    width: 200px;
+    height: 40px;
+    margin-top: 15px;
+}
+#delete{
+    font-size: 25px;
+    font-family: "Bell MT";
+    background-color: #2e55c9;
+    border: none;
+    border-radius: 20px;
+    width: 200px;
+    height: 40px;
+    margin-top: 15px;
+}
+
+#profile{
+    width: 150px;
+    margin: 20px 0;
+}
+
+#img{
+    width: 150px;
+    border-radius: 50%;
+}
+
+.reg_button{
+    width: 20%;
+    margin-left: 8%;
+}
+
+.cim{
+    margin: 15px 0;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.data{
+    width: 80%;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.image{
+    width: 400px;
+    margin: 0;
+}
+
+.album_cim{
+    grid-column: span 2;
+    font-size: 20px;
+    color: #c0fafa;
+    font-weight: bold;
+}
+
+.album{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 400px);
+    width: 80%;
+    margin: 10px auto;
+    gap: 5px;
+    justify-content: center;
+}
+
+.line{
+    border: none;
+    height: 2px;
+    background-color: #c0fafa;
+    margin: 20px auto;
+    width: 80%;
+}
+
+input[type="file"]::-webkit-file-upload-button{
+    background-color: #c0fafa;
+    border: none;
+    border-radius: 20px;
+    font-size: 15px;
+    font-family: "Bell MT";
+}
+
+input{
+    font-family: "Bell MT";
+    font-size: 15px;
+    width: 300px;
+}
+
+.alb_delete{
+    font-size: 18px;
+    font-family: "Bell MT";
+    background-color: #c0fafa;
+    border: none;
+    border-radius: 20px;
+    width: 120px;
+    height: 30px;
+    margin-top: 10px;
+
+}
+
+.album_delete{
+    grid-column: span 2;
+}
+
+.kep{
+    width: 400px;
+}
+
+#images{
+    display: grid;
+    grid-template-columns: repeat(2, 400px);
+    width: 80%;
+    margin: auto;
+    gap: 5px;
+    justify-content: center;
+}
+
+.del{
+    width: 25px;
+}
+h2{
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "Bell MT";
+    margin: 7px;
+}
+
+p[id="name"], p[id="email"], p[id="date"], p[id="job"]{
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+p{
+    margin: 0;
+}
+
+input[id="indok"]{
+    width: 350px;
+    height: 30px;
+}

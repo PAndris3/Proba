@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Regisztráció</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div id="container">
+        <div id="title">Linksy</div>
+        <div id="reg">Regisztráció</div>
+        <div id="login_button">
+            <div class="button">
+                <a class="link" href="bejelentkezes.html">Bejelentkezés</a>
+            </div>
+        </div>
+    </div>
+    <div id="box">
+        <form method="POST">
+            <label for="name">Név</label>
+            <input id="name" type="text" required>
+            <label for="email">E-mail cím</label>
+            <input id="email" type="email" required>
+            <label for="date">Születési dátum</label>
+            <input id="date" type="date" required>
+            <label for="password">Jelszó</label>
+            <input id="password" type="password" required>
+            <label for="password2">Jelszó megerősítése</label>
+            <input id="password2" type="password" required>
+            <button id="mentes" type="submit">Regisztráció</button>
+        </form>
+    </div>
+    <div id="login">
+        Van már fiókja? <a href="bejelentkezes.html">Bejelentkezés</a>
+    </div>
+</body>
+</html>

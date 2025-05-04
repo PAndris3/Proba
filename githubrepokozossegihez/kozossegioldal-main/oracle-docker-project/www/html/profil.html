@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profil</title>
+    <link rel="stylesheet" href="css/profile.css">
+</head>
+<body>
+<div id="container">
+    <div id="title">Linksy</div>
+    <div class="reg_button">
+        <div class="button">
+            <a class="link" href="uzenofal.html">Főoldal</a>
+        </div>
+    </div>
+    <div class="reg_button">
+        <div class="button">
+            <a class="link" href="uzenet.html">Üzenetek</a>
+        </div>
+    </div>
+    <div class="reg_button">
+        <div class="button">
+            <a class="link" href="index.html">Kijelentkezés</a>
+        </div>
+    </div>
+</div>
+<div id="box">
+<div id="profile">
+    <img  id="img" src="kepek/profilkep.png">
+</div>
+    <form method="POST">
+        <label for="profile_img">Profilkép módosítása</label>
+        <input id="profile_img" type="file">
+        <label for="name">Név</label>
+        <input id="name" type="text" placeholder="Név" required>
+        <label for="email">E-mail</label>
+        <input id="email" type="email" placeholder="név123@gmail.com">
+        <label for="password">Jelszó</label>
+        <input id="password" type="password" placeholder="********" required>
+        <label for="date">Születési dátum</label>
+        <input id="date" type="date" value="2002.01.01" required>
+        <label for="job">Munkahely</label>
+        <input id="job" type="text" placeholder="SZTE" required>
+        <button id="modosit" type="submit">Módosítás</button>
+    </form>
+</div>
+<div class="login">
+    <button id="inaktiv" type="button">Profil inaktivitása</button>
+</div>
+<div class="login">
+    <button id="archiv" type="button">Profil archiválása</button>
+</div>
+<div class="login">
+    <button id="delete" type="button">Profil törlése</button>
+</div>
+<div class="data">
+    <p class="cim">Fényképek</p>
+    <form method="POST">
+        <label for="feltoltes">Új kép feltöltése</label>
+        <input id="feltoltes" type="file">
+        <button id="feltolt" type="submit">Feltöltés</button>
+    </form>
+    <div id="images">
+        <div class="kep">
+            <a href="kepek.html">
+                <img class="image" src="kepek/kari.avif">
+            </a>
+            <img class="del" src="kepek/del.png">
+        </div>
+        <div class="kep">
+            <a href="kepek.html">
+                <img class="image" src="kepek/kari2.jpg">
+            </a>
+            <img class="del" src="kepek/del.png">
+        </div>
+        <div class="kep">
+            <a href="kepek.html">
+                <img class="image" src="kepek/kari3.jpg">
+            </a>
+            <img class="del" src="kepek/del.png">
+        </div>
+        <div class="kep">
+            <a href="kepek.html">
+                <img class="image" src="kepek/vac.jpg">
+            </a>
+            <img class="del" src="kepek/del.png">
+        </div>
+        <div class="kep">
+            <a href="kepek.html">
+                <img class="image" src="kepek/vac2.jpg">
+            </a>
+            <img class="del" src="kepek/del.png">
+        </div>
+        <div class="kep">
+            <a href="kepek.html">
+                <img class="image" src="kepek/vac3.jpg">
+            </a>
+            <img class="del" src="kepek/del.png">
+        </div>
+    </div>
+</div>
+<div class="data">
+    <p class="cim">Albumok</p>
+    <form method="POST">
+        <label for="uj">Új album</label>
+        <input id="uj" type="file">
+        <button id="hozzaadas" type="submit">Létrehozás</button>
+    </form>
+    <div class="album">
+        <p class="album_cim">Kirándulás</p>
+        <div class="add_img">
+            <form method="POST">
+                <input class="uj_img" type="file">
+                <button class="add" type="submit">Kép hozzáadása</button>
+            </form>
+        </div>
+        <div class="kep">
+            <a href="kepek.html">
+                <img class="image" src="kepek/vac.jpg">
+            </a>
+            <img class="del" src="kepek/del.png">
+        </div>
+        <div class="kep">
+            <a href="kepek.html">
+                <img class="image" src="kepek/vac2.jpg">
+            </a>
+            <img class="del" src="kepek/del.png">
+        </div>
+        <div class="kep">
+            <a href="kepek.html">
+                <img class="image" src="kepek/vac3.jpg">
+            </a>
+            <img class="del" src="kepek/del.png">
+        </div>
+        <div class="album_delete">
+            <button class="alb_delete" type="button">Album törlése</button>
+        </div>
+    </div>
+    <hr class="line">
+    <div class="album">
+        <p class="album_cim">Karácsony</p>
+        <div class="add_img">
+            <form method="POST">
+                <input class="uj_img" type="file">
+                <button class="add" type="submit">Kép hozzáadása</button>
+            </form>
+        </div>
+        <div class="kep">
+            <a href="kepek.html">
+                <img class="image" src="kepek/kari.avif">
+            </a>
+            <img class="del" src="kepek/del.png">
+        </div>
+        <div class="kep">
+            <a href="kepek.html">
+                <img class="image" src="kepek/kari2.jpg">
+            </a>
+            <img class="del" src="kepek/del.png">
+        </div>
+        <div class="kep">
+            <a href="kepek.html">
+                <img class="image" src="kepek/kari3.jpg">
+            </a>
+            <img class="del" src="kepek/del.png">
+        </div>
+        <div class="album_delete">
+            <button class="alb_delete" type="button">Album törlése</button>
+        </div>
+    </div>
+    <hr class="line">
+</div>
+<div class="data">
+    <p class="cim">Ismerősök</p>
+    <p><a class="link" href="profil2.html">Valaki1</a></p>
+    <p><a class="link" href="profil2.html">Valaki2</a></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+version: '3'
+
+services:
+  oracle:
+    image: gvenzl/oracle-xe:latest
+    container_name: oracle_db
+    environment:
+      - ORACLE_PASSWORD=password
+      - ORACLE_DATABASE=XE
+    ports:
+      - "1521:1521"
+    volumes:
+      - oracle_data:/opt/oracle/oradata
+
+  webserver:
+    build: ./www
+    container_name: php_webserver
+    ports:
+      - "80:80"
+    volumes:
+      - ./www:/var/www/html
+    depends_on:
+      - oracle
+
+volumes:
+  oracle_data:

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Főoldal</title>
+    <link rel="stylesheet" href="css/uzenetek.css">
+</head>
+<body>
+<div id="container">
+    <div id="title">Linksy</div>
+    <div class="reg_button">
+        <div class="button">
+            <a class="link" href="uzenofal.html">Főoldal</a>
+        </div>
+    </div>
+    <div class="reg_button">
+        <div class="button">
+            <a class="link" href="kereses.html">Keresés</a>
+        </div>
+    </div>
+    <div class="reg_button">
+        <div class="button">
+            <a class="link" href="profil.html">Profil</a>
+        </div>
+    </div>
+</div>
+<div id="box">
+    <div id="bal">
+            <h2>Üzenetek</h2>
+            <div class="uzenet">
+            <a class="nev" href="chat.html">Név</a>
+                <div class="gomb">
+                    <button class="delete" type="button">Beszélgetés törlése</button>
+                </div>
+            </div>
+    </div>
+    <div id="jobb">
+        <h2>Csoportok</h2>
+        <form method="POST">
+            <input id="tag" type="text" placeholder="Csoport neve">
+            <button class="add" type="submit" >Csoport létrehozása</button>
+        </form>
+        <div class="group">
+            <div class="header">
+                <a class="nev" href="groupchat.html">Csoport1</a>
+                <button class="torles" type="button">Csoport törlése</button>
+            </div>
+            <div class="gomb">
+                <form method="POST">
+                    <input class="tag" type="text" placeholder="felhasználó neve">
+                    <button class="add" type="submit">Tag hozzáadása</button>
+                </form>
+                <form method="POST">
+                    <input class="tag" type="text" placeholder="felhasználó neve">
+                    <button class="add" type="submit">Tag eltávolítása</button>
+                </form>
+                <form method="POST">
+                    <input class="tag" type="text" placeholder="új név">
+                    <button class="add" type="submit">Átnevezés</button>
+                </form>
+            </div>
+        </div>
+        <hr class="line">
+    </div>
+</div>
+</body>
+</html>
